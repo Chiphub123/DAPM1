@@ -15,15 +15,16 @@ function App() {
         <>
             {/*phần bao quanh toàn bộ trang chủ*/}
             <div id="trangchu">
-                <HeaderComponent/>
+                <HeaderComponent />
 
                 <Routes>
-                    <Route path="/" element={<Main/>} />
-                    <Route path="/dmxe" element={<DSXe/>} />
-                    <Route path="/lienhe" element={<LienHe/>} />
-                    <Route path="/dscuahang" element={<DSCuaHang/>} />
-                    <Route path="/dangky" element={<DangKy/>} />                    
-                    <Route path="/dangnhap" element={<DangNhap/>} />                    
+                    <Route path="/" element={<Main />} />
+                    <Route path="/dmxe" element={<DSXe />} />
+                    <Route path="/lienhe" element={<LienHe />} />
+                    <Route path="/dscuahang" element={<DSCuaHang />} />
+                    <Route path="/dangky" element={<DangKy />} />
+                    <Route path="/dangnhap" element={<DangNhap />} />
+                    <Route path="/me" FooterComponent={Profile} exact />
                 </Routes>
 
                 <FooterComponent />
